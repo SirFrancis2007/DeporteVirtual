@@ -10,7 +10,7 @@
         public abstract double GetPresicion();
         public abstract double GetVisionGeneral();
         public abstract double AplicarEntrenamientoFisico();
-
-
+        public abstract double AplicarEntrenamientoLirico();
+        public abstract double AplicarEntrenamientoTactico();
     }
 }
