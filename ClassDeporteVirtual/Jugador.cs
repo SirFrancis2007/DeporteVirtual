@@ -1,7 +1,7 @@
-﻿namespace ClassDeporteVirtual
+﻿namespace DeporteVirtual
 {
     public class Jugador
     {
 
     }
-}a
+}

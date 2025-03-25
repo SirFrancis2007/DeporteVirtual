@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DeporteVirtual
+{
+    internal class Equipo
+    {
+        public List<Jugador> jugadores;
+
+        public List<Sesion> sesionesEntrenamiento;
+    }
+}
