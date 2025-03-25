@@ -10,23 +10,32 @@ namespace DeporteVirtual
     {
         public double Quite { get; set; }
 
-        public override double AplicarEntrenamientoFisico()
+        public Defensor(double visionJuego, double visionGrupal, double potencia, double quite)
+            => (VisionJuego, VisionGrupal, Potencia, Quite) = (visionJuego, visionGrupal, potencia, quite);
+
+        public override void AplicarEntrenamientoFisico()
         {
-            throw new NotImplementedException();
+            Potencia += 1;
+            HabilidadPases += 0.5;
+            Quite += 0.5;
         }
 
-        public override double AplicarEntrenamientoLirico()
+        public override void AplicarEntrenamientoLirico()
         {
-            throw new NotImplementedException();
+            VisionJuego += 0.5;
+            HabilidadPases += 1;
         }
 
-        public override double AplicarEntrenamientoTactico()
+        public override void AplicarEntrenamientoTactico()
         {
-            throw new NotImplementedException();
+            VisionJuego += 0.5;
+            VisionGrupal += 1;
         }
 
-        public override double GetPresicion() => Convert.ToDouble((3 * HabilidadPases + Quite));
+        public override double GetPresicion()
+            => (3 * HabilidadPases) + Quite;
 
-        public override double GetVisionGeneral() => VisionCompanero += visionJuego;
+        public override double GetVisionGeneral()
+            => VisionGrupal += VisionJuego;
     }
 }

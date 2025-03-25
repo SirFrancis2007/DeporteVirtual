@@ -1,32 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DeporteVirtual;
 
-namespace DeporteVirtual
+namespace ClassDeporteVirtual
 {
-    internal class AtacanteClass : Jugador
+    public class Atacante : Jugador
     {
         public double Anotacion { get; set; }
 
-        public override double AplicarEntrenamientoFisico()
+        public Atacante(double visionJuego, double visionGrupal, double potencia, double anotacion)
+         => (VisionJuego, VisionGrupal, Potencia, Anotacion) = (visionJuego, visionGrupal, potencia, anotacion);
+
+        public override void AplicarEntrenamientoFisico()
         {
-            throw new NotImplementedException();
+            Potencia += 1;
+            HabilidadPases += 0.5;
         }
 
-        public override double AplicarEntrenamientoLirico()
+        public override void AplicarEntrenamientoLirico()
         {
-            throw new NotImplementedException();
+            HabilidadPases += 1;
+            Anotacion += 0.5;
         }
 
-        public override double AplicarEntrenamientoTactico()
+        public override void AplicarEntrenamientoTactico()
         {
-            throw new NotImplementedException();
+            HabilidadPases += 0.5;
+            VisionJuego += 0.5;
+            VisionGrupal += 0.5;
         }
 
-        public override double GetPresicion() => Convert.ToDouble((3 * HabilidadPases + Anotacion));
+        public override double GetPresicion()
+            => 3 * HabilidadPases + Anotacion;
 
-        public override double GetVisionGeneral() => visionJuego += HabilidadPases;
+        public override double GetVisionGeneral()
+            => VisionJuego += HabilidadPases;
     }
 }
