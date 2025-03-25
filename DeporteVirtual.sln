@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeporteVirtual", "DeporteVirtual\DeporteVirtual.csproj", "{58E92C77-9CB6-42A3-AA32-59148EC00A61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassDeporteVirtual", "ClassDeporteVirtual\ClassDeporteVirtual.csproj", "{EACCFD53-CF3C-4DC6-9401-E8F23E2B2DFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassDeporteVirtual", "ClassDeporteVirtual\ClassDeporteVirtual.csproj", "{EACCFD53-CF3C-4DC6-9401-E8F23E2B2DFD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDeporteVirtual", "TestDeporteVirtual\TestDeporteVirtual.csproj", "{10E40C64-7761-414E-80C5-B4FDD43A5002}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestDeporteVirtual", "TestDeporteVirtual\TestDeporteVirtual.csproj", "{10E40C64-7761-414E-80C5-B4FDD43A5002}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{58E92C77-9CB6-42A3-AA32-59148EC00A61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{58E92C77-9CB6-42A3-AA32-59148EC00A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{58E92C77-9CB6-42A3-AA32-59148EC00A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{58E92C77-9CB6-42A3-AA32-59148EC00A61}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EACCFD53-CF3C-4DC6-9401-E8F23E2B2DFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EACCFD53-CF3C-4DC6-9401-E8F23E2B2DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EACCFD53-CF3C-4DC6-9401-E8F23E2B2DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU

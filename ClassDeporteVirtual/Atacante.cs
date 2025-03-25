@@ -25,14 +25,8 @@ namespace DeporteVirtual
             throw new NotImplementedException();
         }
 
-        public override double GetPresicion()
-        {
-            throw new NotImplementedException();
-        }
+        public override double GetPresicion() => Convert.ToDouble((3 * HabilidadPases + Anotacion));
 
-        public override double GetVisionGeneral()
-        {
-            throw new NotImplementedException();
-        }
+        public override double GetVisionGeneral() => visionJuego += HabilidadPases;
     }
 }

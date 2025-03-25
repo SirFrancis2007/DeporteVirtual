@@ -3,7 +3,7 @@
     public abstract class Jugador
     {
         public double visionJuego  { get; set; }
-        public double VisionGrupal { get; set; }
+        public double VisionCompanero { get; set; }
         public double Potencia { get; set; }
         public double HabilidadPases { get; set; }
 
