@@ -14,6 +14,7 @@ namespace TestDeporteVirtual
         {
             _atacante1 = new(0, 0, 0, 0);
             _defensa1 = new(0, 0, 0, 0);
+            var equipo = new Equipo { jugadores = new List<Jugador> { _atacante1, _defensa1 } };
         }
     }
 }

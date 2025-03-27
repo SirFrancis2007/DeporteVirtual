@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DeporteVirtual
 {
-    internal class Equipo
+    public class Equipo
     {
         public List<Jugador> jugadores;
         public List<Sesiones> sesionesEntrenamiento;
