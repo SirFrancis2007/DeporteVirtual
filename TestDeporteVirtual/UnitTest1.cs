@@ -22,19 +22,26 @@ namespace TestDeporteVirtual
             Assert.True(fixture.atacante1.Potencia > potenciaInicial);
         }
 
-        //[Fact]
-        // revisar este!
-        /*public void GetEntrenamientoLiricoDef()
+        [Fact]
+        public void GetEntrenamientoLiricoAtc()
         {
-            var visionJuegoInicial = fixture.defensa1.VisionJuego;
-            fixture.defensa1.AplicarEntrenamientoLirico();
-            Assert.True(fixture.defensa1.VisionJuego > visionJuegoInicial);
-        }*/
+            double habilidadPasesInicial = fixture.atacante1.HabilidadPases;
+            fixture.atacante1.AplicarEntrenamientoLirico();
+            Assert.True(fixture.atacante1.HabilidadPases > habilidadPasesInicial);
+        }
 
         [Fact]
-        public void GetPresicionAtacan()
+        public void GetEntrenamientoLiricoDef()
         {
-            var precision = fixture.atacante1.GetPresicion();
+            double visionJuegoInicial = fixture.defensa1.VisionJuego;
+            fixture.defensa1.AplicarEntrenamientoLirico();
+            Assert.True(fixture.defensa1.VisionJuego > visionJuegoInicial);
+        }
+
+        [Fact]
+        public void GetPrecisionAtacan()
+        {
+            var precision = fixture.atacante1.GetPrecision();
             Assert.True(precision >= 0);
         }
 

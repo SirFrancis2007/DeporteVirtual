@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DeporteVirtual
 {
-    internal class Defensor : Jugador
+    public class Defensor : Jugador
     {
         public double Quite { get; set; }
 
@@ -32,7 +32,7 @@ namespace DeporteVirtual
             VisionGrupal += 1;
         }
 
-        public override double GetPresicion()
+        public override double GetPrecision()
             => (3 * HabilidadPases) + Quite;
 
         public override double GetVisionGeneral()

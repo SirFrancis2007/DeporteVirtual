@@ -25,13 +25,13 @@ namespace DeporteVirtual
             return potencias[0] + potencias[1];
         }
 
-        public double GetPresicion()
+        public double GetPrecision()
         {
             double presicionTotal = 0;
 
             foreach (Jugador jugador in jugadores)
             {
-                presicionTotal += jugador.GetPresicion();
+                presicionTotal += jugador.GetPrecision();
             }
 
             return presicionTotal;

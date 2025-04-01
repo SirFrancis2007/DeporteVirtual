@@ -28,7 +28,7 @@ namespace ClassDeporteVirtual
             VisionGrupal += 0.5;
         }
 
-        public override double GetPresicion()
+        public override double GetPrecision()
             => 3 * HabilidadPases + Anotacion;
 
         public override double GetVisionGeneral()
